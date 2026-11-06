@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Link Locker VM — ปกปิดลิงก์ระดับ VM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>🔒 LINK LOCKER VM</h1>
+  <p class="sub">ล็อกลิงก์ระดับ VM · 1 ตัวอักษร → 24 ตัวอักษร · ถอดกลับได้เฉพาะตอนรัน</p>
+
+  <div class="card">
+    <label>ลิงก์ที่ต้องการปกปิด</label>
+    <input type="text" id="url" placeholder="https://raw.githubusercontent.com/.../script.lua" spellcheck="false">
+    <button class="btn" id="go">ปกปิดสคริปต์ (VM Lock)</button>
+  </div>
+
+  <div class="card" id="resultCard" style="display:none">
+    <div class="head">
+      <span>โค้ดที่ได้ (พร้อมใช้)</span>
+      <button class="mini" id="copy">คัดลอก</button>
+    </div>
+    <pre id="out"></pre>
+    <div class="note">
+      <b>วิธีใช้:</b> คัดลอกโค้ดไปวางใน executor ได้เลย — ลิงก์จริงถูกเข้ารหัสเป็น bytecode VM หลายชั้น (XOR + reverse + derived key) ไม่มีทางเห็นลิงก์จริงในไฟล์
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

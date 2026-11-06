@@ -1,0 +1,57 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  min-height:100vh;
+  background:radial-gradient(circle at 20% 0%,#1b2a4a 0%,#0a0e17 45%,#05070b 100%);
+  color:#e6edf7;
+  font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+  padding:32px 16px 80px;
+}
+.wrap{max-width:900px;margin:0 auto}
+h1{
+  font-size:26px;font-weight:800;letter-spacing:.5px;margin-bottom:6px;
+  background:linear-gradient(90deg,#4dd0ff,#8b7cff,#ff5ec4);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.sub{color:#7d8ba3;font-size:13px;margin-bottom:26px}
+.card{
+  background:rgba(18,24,38,.85);
+  border:1px solid rgba(90,130,200,.25);
+  border-radius:16px;
+  padding:20px;
+  backdrop-filter:blur(8px);
+  box-shadow:0 16px 50px -20px rgba(0,0,0,.9);
+  margin-bottom:18px;
+}
+label{display:block;font-size:13px;color:#8fa3c4;margin-bottom:10px;font-weight:600}
+input[type=text]{
+  width:100%;padding:14px 16px;border-radius:12px;
+  border:1px solid rgba(90,130,200,.35);
+  background:#0b1019;color:#dbe7f7;font-size:14px;outline:none;
+  transition:.2s;
+}
+input[type=text]:focus{border-color:#4dd0ff;box-shadow:0 0 0 3px rgba(77,208,255,.15)}
+.btn{
+  margin-top:16px;width:100%;padding:15px;border:none;border-radius:12px;
+  font-size:15px;font-weight:800;letter-spacing:.3px;cursor:pointer;
+  background:linear-gradient(90deg,#2f7dff,#8b5cf6,#e040a0);
+  color:#fff;transition:.2s;box-shadow:0 10px 30px -12px #8b5cf6;
+}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+.btn:active{transform:translateY(0)}
+.head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.head span{font-size:13px;color:#8fa3c4;font-weight:600}
+.mini{
+  padding:7px 14px;border-radius:9px;border:1px solid rgba(90,130,200,.35);
+  background:#0b1019;color:#9fc4ff;font-size:12px;font-weight:700;cursor:pointer;
+  transition:.2s;
+}
+.mini:hover{background:#14203a;border-color:#4dd0ff}
+pre{
+  background:#070a10;border:1px solid rgba(90,130,200,.2);
+  border-radius:12px;padding:16px;font-size:12.5px;line-height:1.65;
+  color:#7ee787;white-space:pre-wrap;word-break:break-all;
+  max-height:500px;overflow:auto;
+  font-family:'JetBrains Mono',Consolas,monospace;
+}
+.note{font-size:12px;color:#6b7a91;line-height:1.7;margin-top:14px}
+.note b{color:#ffb86b}
